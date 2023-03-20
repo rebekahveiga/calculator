@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+body{
+	background-color: antiquewhite;
+	background-image: url('https://blog.editoracontexto.com.br/wp-content/uploads/2015/10/0c99e7dc8b2a6054c4f2d014bef945e5a01057a4.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.calculadora {
+	width: 600px;
+	height: 650px;
+	z-index: 1;
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(to bottom, #1e7c89ca, #004346);
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	margin-top: 50px;
+}
+
+#display {
+	display: block;
+	width: 100%;
+	height: 90px;
+	margin: 10px 0;
+	margin-top: 15px;
+	padding: 10px;
+	font-size: 40px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.tecla {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	width: 580px;
+	height: 500px;
+}
+
+button {
+	background-color: #DDD;
+	border: none;
+	padding: 10px;
+	font-size: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: #cccccc80;
+}
